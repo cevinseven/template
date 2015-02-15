@@ -1,0 +1,56 @@
+//
+// call @font-face as you need to
+//
+// duplicate for your needs and change the
+// variables in the correct places
+//
+//@font-face  {
+//  .font-face(@font-Reg,"/@{base-font-url}/fonts/@{font-Reg}");
+//}
+//@font-face  {
+//  .font-face(@font-Bold,"/@{base-font-url}/fonts/@{font-Bold}");
+//}
+
+///////////////////////////////////////////////////
+//
+// Project specific variables
+//
+///////////////////////////////////////////////////
+
+@project-path: "/sites/template/wwwroot/img/";
+
+///////////////////////////////////////////////////
+//
+// Project custom styles
+//
+///////////////////////////////////////////////////
+
+.template-wrap {
+
+}
+
+//
+// The .dev class is only used during development
+// and auto shows you additional links in the s2
+// Remove the class in the source when it is
+// ready to be built.
+//
+
+.dev {
+  a:not(.bg) {
+    background-color: yellow;
+    .opacity(.5);
+  }
+}
+
+//
+// IE conditional class names
+// 
+
+&.lt-ie10  {
+  
+}
+
+&.lt-ie9  {
+  
+}

@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////
+//
+// LESS Variables
+//
+///////////////////////////////////////////////////
+
+//
+// listing of all the fonts
+//
+//
+@font-Black: ~"ProximaNova-Black";
+@font-BlackIt: ~"ProximaNova-BlackIt";
+@font-Bold: ~"ProximaNova-Bold";
+@font-BoldIt: ~"ProximaNova-BoldIt";
+@font-Xbold: ~"ProximaNova-Xbold";
+@font-XboldIt: ~"ProximaNova-XboldIt";
+@font-Reg: ~"ProximaNova-Reg";
+@font-RegIt: ~"ProximaNova-RegIt";
+@font-Light: ~"ProximaNova-Light";
+@font-LightIt: ~"ProximaNova-LightIt";
+@font-Sbold: ~"ProximaNova-Sbold";
+@font-SboldIt: ~"ProximaNova-SboldIt";
+@font-Thin: ~"ProximaNova-Thin";
+@font-ThinIt: ~"ProximaNova-ThinIt";
+
+//
+// declares the rest of the font stack
+// usage:
+// selector {
+//  font-family: @font-Reg, @font-stack;
+// }
+//
+@font-stack:~"arial, helvetica, sans-serif";
+
+///////////////////////////////////////////////////
+//
+// @imports
+//
+///////////////////////////////////////////////////
+
+@import "mixins"; //mixins that have proven useful
+
+//
+// 3rd party components
+//
+@import "/vendor/lesshat"; //mixin library for all sorts of CSS3 goodies
+
+@import "project";
+  
+@import "utilities";

@@ -1,0 +1,48 @@
+#jcp specific
+alias cdd='cd $DOTCOMPROJECTS'
+alias cdb='cd $BUILDSCRIPTS'
+
+# team ssh
+alias scevin='ssh 10.32.28.86'
+alias sbrian='ssh 10.32.28.102'
+alias sdebi='ssh 10.32.29.124'
+alias sgee='ssh 10.32.28.151'
+
+alias slt='open -a "Sublime Text 2"'
+# you can also symlink like this
+# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
+# Development aliases
+alias ni='ln -s /Volumes/jcpdigital/dotcom-container-template/dotcom/JCPDIGITAL_TEMPLATE/node_modules/ ./node_modules'
+alias symftp='ln -s /Volumes/jcpdigital/.ftppass ./'
+alias gd='grunt dev'
+alias gu='grunt update'
+alias gunm='grunt updatenm'
+alias gb='grunt build'
+alias gbj='grunt buildjs'
+alias gl='grunt lint'
+alias gp='grunt preview'
+alias gv='grunt verify'
+alias addnpm='npm install'
+
+# be nice
+alias please=sudo
+
+# edit local domains
+# vi could be switched out for a variable for any editor
+alias vhost='sudo vi /etc/apache2/extra/httpd-vhosts.conf'
+alias apacheconfig='sudo vi /etc/apache2/httpd.conf'
+alias hosts='sudo vi /etc/hosts'
+alias apacherestart='sudo apachectl restart'
+
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hideAll="defaults write com.apple.finder AppleShowAllFiles -boolean false && killall Finder"
+alias showAll="defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder"
+
+# Empty the Trash on all mounted volumes and the main HDD
+#alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+alias emptytrash="sudo rm -rfv ~/.Trash"

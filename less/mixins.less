@@ -1,0 +1,98 @@
+//
+// Mixin Library
+//
+
+//
+// add caret mixin
+// adds a '>' after any element 
+// it's included in
+// 
+//  element { .addcaret(); }
+.addcaret() {
+  &:after{
+    content: "\203A";
+    padding-left: 3px;
+    position: relative;
+    top: -1px;
+    font-family: a;
+  }
+}
+
+
+//
+// h5bp image-replacement
+// http://bit.ly/NgnSfH
+//
+// element { .ir(); }
+.ir() {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  // IE 6/7 fallback
+  *text-indent: -9999px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+  }
+}
+
+//
+// this removes image replacement from
+// any element where the image replacement
+// technique has been used
+//
+// element { .ir-remove(); }
+//
+.ir-remove() {
+  background-color: none;
+  border: none;
+  overflow: hidden;
+  *text-indent: normal;
+  
+  &:before {
+    content: none;
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+
+//
+// Clearfix: contain floats
+// http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// element { .cf(); }
+//
+.cf() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+  
+  *zoom: 1;
+}
+
+//
+// Make that element ghost like a magician
+//
+// element { .opacity(.2); }
+//
+.opacity(@opacity: 0.5) {
+  @opperc: @opacity * 100;
+  
+  // For IE 8
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  // For IE 5/6/7
+  filter: ~"alpha(opacity=@{opperc})";
+  -moz-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+}

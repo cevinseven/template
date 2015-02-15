@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<alt_content id="myAlternativeContent">
+		<!-- path to an .html file that will contain only a <div>, not other wrapping html code-->
+		<file>content.html</file>
+	</alt_content>
+</config>
