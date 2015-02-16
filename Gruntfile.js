@@ -14,7 +14,7 @@ module.exports = function(grunt) {
       },
       verify: {
         options: {force: true},
-        src: ["/Volumes/cevdev/home/wwwroot/verify/*"]
+        src: ["/Volumes/cevdev/verify/*"]
       },
       dist: {
         src: ["dist"]
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: './_BUILD/',
             src: ['./**'],
-            dest: '/Volumes/cevdev/home/wwwroot/verify'
+            dest: '/Volumes/cevdev/verify'
           }
         ]
       },
@@ -173,7 +173,7 @@ module.exports = function(grunt) {
     },
     open : {
       verify : {
-        path: 'http://home.dev/verify/index.html',
+        path: 'http://verify.dev/index.html',
         app: 'Google Chrome'
       },
       preview: {
