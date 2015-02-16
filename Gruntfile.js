@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: './',
-            src: ['*', 'img/**', '!node_modules/**', '!*.json', '!*.js', '!less/**', '!_BUILD/**', '!*.psd', '!README.md', '!dist/**'],
+            src: ['*', 'img/**', '!node_modules/**', '!*.json', '!*.js', '!less/**', '!_BUILD/**', '!*.psd', '!README.md', '!dist/**', '!fonts/**', '!ranchero/**', '!wordpress/**'],
             dest: '<%= buildfolder %>'
           }
         ]
